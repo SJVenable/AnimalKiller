@@ -1,11 +1,14 @@
-name: MovingWall
+name: AnimalKiller
 author: Jethro
-main: me.jethro.movingwall.MovingWall
+main: me.jethro.animalkiller.AnimalKiller
 version: 1.0
 api-version: 1.20
 
 
 commands:
-  wall:
-    description: Start or stop the creation of a big wall
-    usage: /wall start
+  start:
+    description: Starts the Animal Killer game
+    usage: /start
+  reset:
+    description: Resets the game
+    usage: /reset
