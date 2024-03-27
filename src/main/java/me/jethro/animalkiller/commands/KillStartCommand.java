@@ -15,7 +15,7 @@ public class KillStartCommand implements org.bukkit.command.CommandExecutor{
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (command.getLabel().equalsIgnoreCase("start")) {
+        if (s.equalsIgnoreCase("start")) {
             plugin.startGame((Player) commandSender);
         }
         return false;

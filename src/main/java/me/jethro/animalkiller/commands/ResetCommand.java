@@ -16,9 +16,8 @@ public class ResetCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (command.getLabel().equalsIgnoreCase("reset")) {
-            plugin.resetPlayers();
-            plugin.stopRound();
+        if (s.equalsIgnoreCase("reset")) {
+            plugin.resetRound();
         }
         return false;
     }

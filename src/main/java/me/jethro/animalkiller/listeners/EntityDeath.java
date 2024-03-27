@@ -19,9 +19,9 @@ public class EntityDeath implements Listener {
     }
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event) {
-        if(plugin.getMobSelected().getType().equals(event.getEntityType())) {
-            if(plugin.isPlayerSuccessful(event.getEntity().getKiller())) return;
-            plugin.addSuccessfulPlayer(event.getEntity().getKiller());
+        if(plugin.getMobSelected().get(event.getEntity().getKiller()).getType().equals(event.getEntityType())) {
+            if(plugin.playerHandler.isPlayerSuccessful(event.getEntity().getKiller())) return;
+            plugin.playerHandler.addSuccessfulPlayer(event.getEntity().getKiller());
             event.getEntity().getKiller().sendMessage(ChatColor.GREEN + "" + ChatColor.BOLD + "Success!");
         }
     }
