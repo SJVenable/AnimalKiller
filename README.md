@@ -7,4 +7,4 @@ A message will be displayed with an animal to kill in-game. Succeed and move ont
 
 
 
-This is a commissioned project which fell through.
+This is a commissioned project which fell through. Unfortunately my more serious and complex projects in Java are under commission so I'm unable to show them on Github. Feel free to ask personally about my experience with them.
